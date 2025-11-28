@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardishop</title>
+  <link rel="icon" type="image/x-icon" href="LogoWebsiteCardishop.png">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=1.1" />
+</head>
+
+<body>
+
+  <!-- navbar section -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">CARDISHOP</div>
+
+      <!-- Navigation menu -->
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="kategori.html">Kategori</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+
+        <!-- hamburger menu for mobile -->
+        <div class="hamburger" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <section id="beranda" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Level Up Pengalaman Gamingmu!</h1>
+        <p>
+          Portal top-up No. 1 gamers Indonesia.
+          Dapatkan harga terbaik, proses instan!
+        </p>
+        <p class="hero-highlight">
+          Tunggu Apa Lagi? Top Up Sekarang!
+        </p>
+
+        <!-- Button top up -->
+        <button class="btn-primary" id="btn-topup">
+          Top Up Sekarang!
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="Image/Roblox-Hero.png" class="hero-char-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- game list section -->
+  <section id="game" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Game Populer</h2>
+      <div class="game-grid">
+        <!-- game card1 -->
+        <a href="game.html" class="game-card">
+          <img src="Image/mobile-legends.png" alt="Mobile Legends">
+          <div class="card-body">
+            <h3>Mobile Legends</h3>
+            <p>MOBA</p>
+          </div>
+        </a>
+
+        <!-- game card 2 -->
+        <a href="game.html" class="game-card">
+          <img src="Image/pubg-mobile.png" alt="PUBG Mobile">
+          <div class="card-body">
+            <h3>PUBG Mobile</h3>
+            <p>Battle Royale</p>
+          </div>
+        </a>
+
+        <!-- game card 3 -->
+        <a href="game.html" class="game-card">
+          <img src="Image/valorant.jpg" alt="Valorant">
+          <div class="card-body">
+            <h3>Valorant</h3>
+            <p>FPS PC</p>
+          </div>
+        </a>
+
+        <!-- game card 4 -->
+        <a href="game.html" class="game-card">
+          <img src="Image/genshin-impact.jpg" alt="Genshin Impact">
+          <div class="card-body">
+            <h3>Genshin Impact</h3>
+            <p>RPG</p>
+          </div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="game.html" class="btn-primary">Lihat Semua Game</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section kategori -->
+  <section id="kategori" class="section-padding bg-darker">
+    <div class="container">
+      <h2 class="section-title">Kategori Platform</h2>
+      <div class="game-grid">
+        <a href="kategori.html" class="game-card">
+          <img src="Image/mobile-game.jpg" alt="Mobile">
+          <div class="card-body">
+            <h3>Mobile</h3>
+            <p>Android & iOS</p>
+          </div>
+        </a>
+        <a href="kategori.html" class="game-card">
+          <img src="Image/pc-game.jpeg" alt="PC">
+          <div class="card-body">
+            <h3>PC</h3>
+            <p>Steam, Epic, etc</p>
+          </div>
+        </a>
+        <a href="kategori.html" class="game-card">
+          <img src="Image/console-game.jpg" alt="Console">
+          <div class="card-body">
+            <h3>Console</h3>
+            <p>PlayStation, Xbox, Nintendo</p>
+          </div>
+        </a>
+        <a href="kategori.html" class="game-card">
+          <img src="Image/others.jpg" alt="Voucher">
+          <div class="card-body">
+            <h3>Voucher</h3>
+            <p>Google Play, Steam Wallet</p>
+          </div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="kategori.html" class="btn-primary">Lihat Semua Kategori</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section contact -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Tulis pesan Anda di sini..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer design -->
+  <footer>
+    <div class="container footer-content">
+      <!-- column 1: identity -->
+      <div class="footer-col">
+        <h3>CARDISHOP</h3>
+        <p>
+          Pusat top-up game terpercaya dengan sensasi biru gamers sejati.
+          Aman, Cepat, dan Banyak Bonusnya.
+        </p>
+        <br />
+        <h4>Hubungi Kami</h4>
+        <p>Email: support@cardishop.id</p>
+        <p>Telp: 021-12345678</p>
+        <p>WhatsApp: +62 812 3456 7890</p>
+      </div>
+
+      <!-- column 2: about us -->
+      <div class="footer-col">
+        <h4>Tentang Kami</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+
+      <!-- column 3: quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="quick-links">
+          <li><a href="index.html">Beranda Website</a></li>
+          <li><a href="game.html">List Game</a></li>
+          <li><a href="kategori.html">Kategori Platform</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 CARDISHOP. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- script js -->
+  <script src="script.js"></script>
+</body>
+
+</html>

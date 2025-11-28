@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameNusa - Portal Topup Gamers</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <!-- navbar section -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">CARDISHOP</div>
+
+        <!-- Navigation menus -->
+        <ul class="nav-links" id="navMenu">
+          <li><a href="#beranda" class="active">Beranda</a></li>
+          <li><a href="#game">Game</a></li>
+          <li><a href="#kategori">Kategori</a></li>
+          <li><a href="#points">Points</a></li>
+        </ul>
+
+        <!-- Action buttons -->
+        <div class="nav-actions">
+
+          <!-- hamburger menu for mobile -->
+          <div class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="beranda" class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>Level Up Pengalaman Gamingmu!</h1>
+          <p>
+            Portal top-up No. 1 gamers Indonesia.
+            Dapatkan harga terbaik, proses instan, dan kumpulkan
+            <b>Points</b> untuk setiap transaksi!
+          </p>
+          <p class="gamification-text">
+            Makin sering top-up, makin sultan akunmu!
+          </p>
+          <button class="btn-primary" onclick="scrollToSection('game')">
+            Top Up Sekarang Juga!
+          </button>
+        </div>
+        <div class="hero-image">
+            <img src="Roblox-Hero.png" class="hero-char-img">
+      </div>
+    </section>
+
+    <!-- section daftar game -->
+    <section id="game" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Game Populer</h2>
+        <div class="game-grid">
+          <!-- kartu game 1 -->
+          <div class="game-card">
+            <div class="card-body">
+              <h3>Mobile Legends</h3>
+              <p>MOBA</p>
+            </div>
+          </div>
+
+          <!-- kartu game 2 -->
+          <div class="game-card">
+            <div class="card-body">
+              <h3>PUBG Mobile</h3>
+              <p>Battle Royale</p>
+            </div>
+          </div>
+
+          <!-- kartu game 3 -->
+          <div class="game-card">
+            <div class="card-body">
+              <h3>Valorant</h3>
+              <p>FPS PC</p>
+            </div>
+          </div>
+
+          <!-- kartu game 4 -->
+          <div class="game-card">
+            <div class="card-body">
+              <h3>Genshin Impact</h3>
+              <p>RPG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section kategori -->
+    <section id="kategori" class="section-padding bg-darker">
+      <div class="container">
+        <h2 class="section-title">Kategori Platform</h2>
+      </div>
+    </section>
+
+    <!-- section points system (gamifikasi) -->
+    <section id="points" class="section-padding">
+      <div class="container points-container">
+        <div class="points-info">
+          <h2>Loyalty Points</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer design -->
+    <footer>
+      <div class="container footer-content">
+        <!-- kolom 1: identitas -->
+        <div class="footer-col">
+          <h3>CARDISHOP</h3>
+          <p>
+            Pusat top-up game terpercaya dengan sensasi biru gamers sejati.
+            Aman, Cepat, dan Banyak Bonusnya.
+          </p>
+          <br />
+          <h4>Hubungi Kami</h4>
+          <p>Email: support@cardishop.id</p>
+          <p>Telp: 021-12345678</p>
+          <p>WhatsApp: +62 812 3456 7890</p>
+        </div>
+
+        <!-- kolom 2: layanan -->
+        <div class="footer-col">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Cara Top Up</a></li>
+            <li><a href="#">Metode Pembayaran</a></li>
+            <li><a href="#">Pengembalian Dana</a></li>
+          </ul>
+        </div>
+
+        <!-- kolom 3: tentang kami -->
+        <div class="footer-col">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <!-- kolom 4: quick links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+            <li><a href="#beranda">Beranda Website</a></li>
+            <li><a href="#game">List Game</a></li>
+            <li><a href="#kategori">Kategori Platform</a></li>
+            <li><a href="#points">Cek Points</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 CARDISHOP. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- script js -->
+    <script src="script.js"></script>
+  </body>
+</html>
